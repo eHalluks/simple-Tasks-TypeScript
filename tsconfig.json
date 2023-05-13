@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["ES2022"],
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "downlevelIteration": true,
+    "preserveConstEnums": true,
+  }
+}
