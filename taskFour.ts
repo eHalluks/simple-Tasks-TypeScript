@@ -6,7 +6,7 @@
 
     [ done ] TODO: Make a universal function;
     [ done ] TODO: Return to string yes or no instead True or false;
-    [ not finished yet ] TODO: Create a unit test;
+    [ done ] TODO: Create a unit test;
 
  */
 
