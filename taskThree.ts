@@ -65,7 +65,7 @@ const decOp: CurrentType = {
     sign: '--',
 };
 
-// some function to run a code....
+// creating a function in progress....
 
 
 /*
@@ -206,3 +206,5 @@ const calcTwoDigits = async ({a, b ,sign}: TwoDigits2) => {
     }, 7000);
 }
 calcTwoDigits(a).then(r => {});
+
+// creating a function in progress....
