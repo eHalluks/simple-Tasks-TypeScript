@@ -10,5 +10,6 @@
     "outDir": "dist",
     "downlevelIteration": true,
     "preserveConstEnums": true,
-  }
+  },
 }
+
