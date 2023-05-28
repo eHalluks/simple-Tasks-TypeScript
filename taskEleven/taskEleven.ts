@@ -22,44 +22,8 @@
 
 
 import { v4 as uuid } from 'uuid';
-const fetch = require('isomorphic-fetch');
-
-
-interface SingleTodo {
-    userId: number | string;
-    id: number;
-    title: string;
-    completed: boolean;
-}
-
-type SingleTodoToCreate = Omit<SingleTodo, 'id'>
-
-class TodoApi {
-
-    private readonly url = "https://jsonplaceholder.typicode.com/todos";
-
-    async get(id: number): Promise<SingleTodo> {
-        const resp = await fetch(`${this.url}/${id}`);
-        return await resp.json() as SingleTodo;
-    };
-
-    async list(): Promise<SingleTodo[]> {
-        const resp = await fetch(`${this.url}/`);
-        return await resp.json();
-    }
-
-    async create(task: SingleTodoToCreate): Promise<SingleTodo> {
-        const resp = await fetch(`${this.url}/`, {
-            method: 'POST',
-            body: JSON.stringify(task),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        });
-        return await resp.json();
-    }
-
-}
+import {SingleTodo} from "./types";
+import {TodoApi} from "./libs/todo-api";
 
 const displayFirst10 = (listOfAllTodos: SingleTodo[]) => {
 
