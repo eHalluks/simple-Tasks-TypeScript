@@ -10,6 +10,8 @@
     "outDir": "dist",
     "downlevelIteration": true,
     "preserveConstEnums": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
 }
 
